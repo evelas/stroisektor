@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Din-2014-light-typeface";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/din-2014-light-typeface.woff2") format("woff2"),
+    url("../fonts/din-2014-light-typeface.woff") format("woff"),
+    url("../fonts/din-2014-light-typeface.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Panama";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/panama.woff2") format("woff2"),
+    url("../fonts/panama.woff") format("woff"),
+    url("../fonts/panama.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Panama";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/panama-italic.woff") format("woff"),
+    url("../fonts/panama-italic.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Panama";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/panama-bold.woff2") format("woff2"),
+    url("../fonts/panama-bold.woff") format("woff"),
+    url("../fonts/panama-bold.otf") format("otf");
+}

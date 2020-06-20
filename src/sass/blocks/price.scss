@@ -1,0 +1,34 @@
+.price {
+	padding-bottom: 100px;
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__window {
+		width: 240px;
+	    height: 140px;
+	    background-color: #2B6CA3;
+	 
+	    display: flex;
+	    cursor: pointer;
+	    align-items: center;
+	    justify-content: center;
+
+	    font-size: 24px;
+	    color: #FFDE11;
+	    font-family: 'Oswald';
+	    margin-bottom: 20px;
+	    margin-right: 20px;
+	    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.75);
+	}
+
+	&__name {
+		text-align: left;
+	    padding-bottom: 0.5em;
+	    color: #2B6CA3;
+	    font-size: 30px;
+	    font-family: $serif;
+	}
+}

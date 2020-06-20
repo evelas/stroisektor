@@ -1,0 +1,22 @@
+.about {
+	padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/picture/wood.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &__text {
+    	font-size: 17px;
+    	color: $white;
+    	text-align: center;
+    	font-family: $serif;
+		line-height: 26px;
+    	max-width: 540px;
+    	margin: auto;
+    }
+}

@@ -1,0 +1,119 @@
+.modal-form {
+	&__input {
+		background-color: rgba(255, 255, 255, 1);
+	    border: 1px solid rgba(160, 160, 159, 1);
+	    color: $black;
+	    margin: 0 0 5px;
+	    width: 400px;
+	    box-sizing: border-box;
+	    margin: auto;
+	    margin-top: 5px;
+	    font-weight: bold;
+	    border-radius: 5px;
+	    padding: 10px;
+		outline: none;
+		font-size: 14px;
+		
+		@media (max-width: $xmobile) {
+			width: auto;
+		}
+
+	}
+    &__button {
+    	background-color: $yellow;
+    	margin-top: 35px;
+    	cursor: pointer;
+    }
+}
+.form {
+	background-color: $blue;
+	font-family: $serif;
+	padding-bottom: 100px;
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		div {
+			padding: 10px;
+			@media (max-width: $xmobile) {
+				text-align: center;
+			}
+		}
+	}
+
+	&__callback {
+		display: none;
+		text-align: center;
+		color: red;
+		&.show {
+			display: block;
+		}
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+
+	&__text {
+		color: $white;
+	    text-transform: uppercase;
+	    padding-bottom: 15px;
+	    letter-spacing: 0.09em;
+	    font-size: 20px;
+	    margin-bottom: 10px;
+	    &--center {
+	    	text-align: center;
+	    }
+	}
+
+	form {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__input {
+	    background-color: rgba(255, 255, 255, 1);
+	    border: 1px solid rgba(160, 160, 159, 1);
+	    color: $black;
+	    margin: 0 0 5px;
+	    width: 100%;
+	    max-width: 538px;
+	    box-sizing: border-box;
+	    margin: auto;
+	    margin-top: 10px;
+	    font-weight: bold;
+	    border-radius: 5px;
+	    font-size: 16px;
+	    padding: 12px;
+	    outline: none;
+	}
+
+	&__textarea {
+		min-height: 160px;
+	}
+
+	&__button {
+		margin: 20px auto 0;
+		button {
+		    background-color: rgba(255, 222, 17, 1);
+		    font: normal normal normal 14px/1.4em futura-lt-w01-book,sans-serif;
+		    border: 0;
+		    outline: 0;
+		    color: #000000;
+		    cursor: pointer;
+		    border-radius: 5px;
+		    padding: 1em;
+		    font-weight: bold;
+		    text-transform: uppercase;
+		}
+	}
+}
+input::placeholder, textarea::placeholder {
+	color: grey;
+	font-size: 14px;
+	opacity: 0.7;
+}

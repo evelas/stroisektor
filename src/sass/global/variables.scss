@@ -1,0 +1,27 @@
+//Брейкпойнты
+$mobile: 320px;
+$xmobile: 480px;
+$tablet: 834px;
+$xtablet: 1112px;
+$desktop: 1024px;
+
+//Мин ширина экрана
+$width-min: $mobile;
+
+//Цвета
+$blue: #56ddfd;
+$dark-blue: #26586b;
+$black: #000000;
+$white: #ffffff;
+$second-color: rgb(176, 28, 154);
+$yellow: #FFDE11;
+$yellow-dark: #ffdd00;
+$serif: sans-serif;
+$blue: rgba(43, 108, 163, 1);
+// Значения для фоновых изображений под ретину
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Шрифты
+$font-family-panama: "Panama", "Times New Roman", serif;
+$font-family-din: "Din-2014-light-typeface", "Times New Roman", serif;

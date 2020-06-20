@@ -1,0 +1,155 @@
+.page{
+	padding-top: 76px;
+
+	@media (max-width: $tablet) {
+		padding-top: 55px;
+	}
+	
+	&__button {
+	    justify-content: center;
+	    background-color: $blue;
+	    border: solid rgba(207, 207, 207, 1) 0px;
+	    cursor: pointer;
+	    transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+	    text-decoration: none;
+
+	    padding: 10px 40px;
+	    font-size: 15px;
+	    text-transform: uppercase;
+	    color: $yellow;
+
+	    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.75);
+	}
+
+	&__desktop {
+		@media (max-width: $desktop) {
+			display: none;
+		}
+	}
+
+	&__tablet {
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+
+	&__mobile-menu {
+		display: none;
+
+		@media (max-width: $tablet) {
+			display: block;
+		}
+	}
+	
+	&__h1 {
+		font-weight: normal;
+		font-family: $serif;
+		font-size: 44px;
+		line-height: 50px;
+	    color: #FFFFFF;
+	    text-transform: uppercase;
+	    margin: 0;
+	    @media (max-width: $xmobile) {
+	    	font-size: 21px;
+	    	line-height: 25px;
+	    }
+	}
+
+	&__h2 {
+		margin: 0;
+		font-weight: 400;
+		text-transform: uppercase;
+    	letter-spacing: 0.17em;
+    	font-family: $serif;
+    	font-size: 20px;
+    	line-height: 0.8em;
+    	margin-top: 10px;
+
+    	@media (max-width: $xmobile) {
+    		font-size: 14px;
+    	}
+	}
+
+	&__h3 {
+		font-size: 44px;
+    	color: $yellow;
+    	font-weight: normal;
+    	font-weight: $serif;
+		margin: 0;
+		margin-top: 30px;
+
+		@media (max-width: $xmobile) {
+			font-size: 21px;
+		}
+	}
+
+	&__h4 {
+		margin: 0;
+		font-size: 44px;
+		font-family: 'Oswald';
+		text-align: center;
+		color: $white;
+		text-transform: uppercase;
+		padding: 1em 0;
+	}
+
+	&__h5 {
+		color: $white;
+	    font-size: 20px;
+	    font-weight: 800;
+	    padding: 20px 0;
+	    margin: 0;
+	    min-height: 46px;
+	}
+
+	&__round {
+	    fill-opacity: 0;
+	    stroke-opacity: 1;
+	    fill: rgb(0, 46, 93);
+	    stroke: rgb(255, 255, 255);
+	    stroke-width: 3;
+
+	    width: 100px;
+	    height: 100px;
+	}
+
+	&--blue {
+		color: $dark-blue!important;
+	}
+
+	&--yellow {
+		color: $yellow!important;
+	}
+	&--white-blue {
+		color: #5AB7E8!important;
+	}
+
+}
+
+.grow {
+	display: inline-block;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+    &:hover {
+    	transform: scale(0.92);
+    }
+}
+
+#price, #home, #service, #form {
+	scroll-margin: 50px;
+}
+
+.js-tab-content {
+	display: none;
+	&.active {
+		display: flex;
+	}
+}
+
+iframe {
+	@media (max-width: $tablet) {
+	    width: -webkit-fill-available;
+	    width: -moz-available;
+	}
+}

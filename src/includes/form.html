@@ -1,0 +1,46 @@
+<section class="form" id="form">
+	<div class="container--page">
+		<div class="wrapper">
+			<h4 class="page__h4 page--white-blue">
+				Обращайтесь
+			</h4>
+			<div class="form__content">
+				<div>
+					<p class="form__text">Телефон</p>
+					<a href="tel: +7(812)9839084">+7 (812) 983 90 84</a>
+				</div>
+
+				<div>
+					<p class="form__text">E-mail</p>
+					<a href="mailto: info@stroisektor.ru ">info@stroisektor.ru</a>
+				</div>
+
+				<div>
+					<p class="form__text">Соцсети</p>
+					<a href="https://vk.com/stroisektor" target="_blank">
+						<img src="img/picture/vk.png" style="position: relative;bottom: 20px;">
+					</a>
+				</div>
+			</div>
+
+			<form class="form__main" action="/php-mailer/send.php" method="POST" name="phone">
+
+				<p class="form__text form__text--center">Заказать звонок</p>
+				<span class="form__callback">Сообщение отправлено</span>
+
+				<input class="form__input" type="text" name="name" placeholder="Имя" required>
+
+				<input class="form__input" type="email" name="email" placeholder="E-mail" required>
+
+				<input class="form__input" type="text" name="phone" placeholder="Телефон" required>
+
+				<input class="form__input" placeholder="Удобное время для звонка" name="textarea" required> 
+
+				<div class="form__button">
+					<button type="submit">Отправить</button>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+</section>

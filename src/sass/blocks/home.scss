@@ -1,0 +1,24 @@
+.home {
+    background-image: url(../img/picture/home.jpg);
+    background-size: cover;
+    height: 75vh;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url(../img/picture/home@2x.jpg);
+    }
+
+	&__content{
+		display: flex;
+    	height: 65vh;
+    	flex-direction: column;
+    	justify-content: center;
+    	color: $white;
+    	max-width: 800px;
+	}
+
+	&__button {
+		margin-top: 40px;
+	}
+   
+}

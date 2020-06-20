@@ -1,0 +1,173 @@
+.header {
+	position: fixed;
+    background-color: $yellow;
+    width: 100%;
+    z-index: 50;
+    font-family: 'Oswald';
+	
+	&__logo {
+		width: 250px;
+		@media (max-width: $tablet) {
+			width: 150px;
+		}
+	}
+
+    &__content {
+    	display: flex;
+    	align-items: center;
+    	width: 100%;
+    	justify-content: space-between;
+    	padding: 10px 0;
+
+    }
+
+    &__link {
+		text-decoration: none;
+		color: $black;
+		font-weight: bold;
+    }
+
+    &__item {
+    	padding: 1.2em 0;
+    	a {
+    		display: flex;
+    		align-items: center;
+    	}
+    	
+    	img {
+    		padding-left: 5px;
+    	}
+    }
+
+    &__hidden-ul {
+    	display: none;
+    	position: absolute;
+    	background-color: $blue;
+    	padding: 1.5em;
+    	top: 45px;
+    	width: 350px;
+    	transition: 0.5s ease-in-out;
+
+    	a {
+    		color: $white;
+    		text-decoration: none;
+    	}
+    	li {
+    		&:not(:last-child) {
+    			padding-bottom: 0.5em;
+    		}
+    	}
+    }
+
+    &__list {
+    	display: flex;
+    	text-transform: uppercase;
+    	color: $black;
+    	&-column {
+    		 flex-wrap: wrap;
+    		 margin: 30px 30px 20px;
+
+    	}
+    }
+
+    &__item {
+    	&:not(:last-child) {
+    		padding-right: 50px;
+    	}
+    }
+
+    &__mobile-ul {
+        
+        padding-left: 15px;
+        padding-top: 10px;
+        a {
+            color: $black;
+            padding-bottom: 5px;
+        }
+    }
+
+    &__mobile-menu {
+    	display: none;
+    	z-index: 10;
+    	padding-bottom: 30px;
+	    top: 54px;
+	    left: 0;
+	    width: 100%;
+	    background: $yellow-dark;
+    	transform: translateY(-100%);
+    	transition: transform .2s ease;
+        position: fixed;
+
+    	@media (max-width: $tablet) {
+    		display: block;
+    	}
+    	&--active {
+    		transform: translateY(0%);
+    	}
+    }
+
+
+	&__burger {
+		vertical-align: top;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 56px;
+		width: 56px;
+		background: $black;
+        cursor: pointer;
+
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -11px;
+			margin-top: -1px;
+			display: inline-block;
+			width: 22px;
+			height: 2px;
+			background: $white;
+			transition: all .2s ease;
+
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: $white;
+				transition: all .2s ease;
+			}
+
+			&:before {
+				transform: translateY(-300%);
+			}
+
+			&:after {
+				transform: translateY(300%);
+			}
+		}
+
+		&.active {
+			span {
+				background: transparent;
+
+				&:before {
+					transform: translateY(0) rotate(-45deg);
+				}
+
+				&:after {
+					transform: translateY(0) rotate(45deg);
+				}
+			}
+		}
+	}
+}
+
+.header__nav ul li:hover .header__hidden-ul{
+	display: block;
+}
+#header-hover {
+	position: relative;
+}

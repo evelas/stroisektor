@@ -1,0 +1,66 @@
+.service {
+	background-color: $blue;
+	font-family: $serif;
+	padding-bottom: 40px;
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		margin-top: 2em;
+	}
+
+	&__block {
+		position: relative;
+		margin-bottom: 60px;
+		 
+	}
+
+	&__list {
+		list-style-type: none;
+		color: $white;
+		font-size: 15px;
+		display: flex;
+		padding: 5px 0;
+		
+		a {
+			color: $white;
+		}
+
+		&--hover {
+			cursor: pointer;
+			&:hover:before {
+			   box-shadow: 0 0 0 3.2px #cd2122;
+			}
+		}
+		
+		&:before {
+			content: '';
+		    width: 5px;
+		    height: 5px;
+		    margin-top: auto;
+		    margin-bottom: auto;
+		    margin-right: 10px;
+		    display: block;
+		    background-color: rgba(43, 108, 163, 1);
+		    box-shadow: 0 0 0 2px rgb(255,222,17);
+		    transition: all .15s;
+
+		}
+	}
+
+	&__instruments {
+		position: absolute;
+		left: 18px;
+		top: -40px;
+
+		&--left {
+			left: 30px;
+		}
+
+		&--top {
+			top: -28px;
+		}
+	}
+}

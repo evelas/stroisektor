@@ -1,0 +1,92 @@
+.blocks {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: $serif;
+	&__content {
+		margin-bottom: 30px;
+		&--none {
+			display: none;
+		}
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		@media (max-width: 1279px) {
+			justify-content: center;
+
+		}
+
+		img {
+			width: 450px;
+			margin-bottom: 20px;
+			@media (max-width: 1279px) {
+				width: 650px;
+			}
+		}
+	}
+
+	&__text {
+		max-width: 650px;
+		padding-left: 100px;
+		min-height: 400px;
+		margin-bottom: 1em;
+		
+		@media (max-width: 1279px) {
+			padding-left: 0;
+			padding-right: 100px;
+			padding: 50px 0px 0 0;
+		}
+	}
+
+	h1 {
+		font-size: 34px;
+	    font-weight: bold;
+	    margin: 0;
+	    margin-bottom: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	    font-weight: bold;
+	    font-family: $serif;
+	    margin:0;
+	    margin-bottom: 30px;
+	}
+
+	p {
+		font-size: 13px;
+	    line-height: 1.7;
+	    color: #535353;
+	    text-align: justify;
+	    margin:0;
+	    margin-bottom: 60px;
+	}
+
+	span {
+		color: #cd2122;
+	    font-size: 11px;
+	    font-weight: bold;
+	}
+
+	&__button {
+		background-color: $yellow;
+	    font-size: 14px;
+	    border: 0;
+	    outline: 0;
+	    color: $black;
+	    cursor: pointer;
+	    border-radius: 5px;
+	    padding: .7em 2em;
+	    font-weight: bold;
+	}
+}
+
+.swiper-container {
+	width: 450px;
+	height: auto;
+}
+.swiper-wrapper {
+	height: auto!important;
+}
+.swiper-slide-330 {
+	height: 330px!important;
+}
