@@ -46,10 +46,17 @@
     	<div class="container">
     		<div class="header__mobile-content">
     			<ul class="header__list header__list-column">
-    	            <li class="header__item"><a href="http://stroisektor.ru" id="works" class="header__link">на главную</a></li>
-    	           
+    	            <li class="header__item"><a href="http://stroisektor.ru" class="header__link">Главная</a></li>
+    	            <li class="header__item"><a href="#form" class="header__link header__link--active">Услуги</a>
+    					<ul class="header__mobile-ul"  >
+                			<li><a href="rehau">Окна и балконные двери Rehau</a></li>
+                			<li><a href="services">Остекление и отделка балконов и лоджий</a></li>
+                			<li><a href="wood">Деревянные и дерево-алюминиевые окна и двери</a></li>
+                			<li><a href="rollety">Роллеты гаражные ворота</a></li>
+                		</ul>
+    	            </li>
     	        </ul>
-    	        <a  data-micromodal-trigger="modal-7" href='javascript:void(0);' class="page__button">Заказать звонок</a>
+    	        <a data-micromodal-trigger="modal-7" href='javascript:void(0);' class="page__button">Заказать звонок</a>
     		</div>
     	</div>
     </div>
@@ -71,7 +78,7 @@
       						<br>
       						Купить ролльставни — наилучшее решение для защиты промышленных складов, торговых площадей, магазинов, офисов, гаражей, также они отлично подойдут как для частных домов, так и для квартир.
       					</p>
-      					<a class="blocks__button">Заказать</a>
+      					<a data-micromodal-trigger="modal-7" href='javascript:void(0);' class="blocks__button">Заказать</a>
       				</div>
       			</div>
       		</div>
@@ -120,7 +127,7 @@
       			 
       
       				<div class="grey-page__button">
-      					<a class="blocks__button">Заказать</a>
+      					<a data-micromodal-trigger="modal-7" href='javascript:void(0);' class="blocks__button">Заказать</a>
       				</div>
       			</div>
       		</div>
@@ -131,7 +138,538 @@
     <footer class="footer">
     	<span>© 2018 СтройСектор</span>
     </footer>
-
+    <div class="modal micromodal-slide" id="modal-7" aria-hidden="true">
+       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-7-title">
+             <header class="modal__header">
+                <h2 class="modal__title" id="modal-7-title">
+                  Заказ обратного звонка
+                </h2>
+    
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+             </header>
+             <main class="modal__content" id="modal-7-content">
+                 <form class="modal-form form__main"   action="/php-mailer/send.php" method="POST" name="phone">
+                   <p>
+                      <input type="text" name="name" placeholder="ФИО" required="" class="modal-form__input">
+                   </p>
+                   <p>
+                      <input type="text" name="phone" placeholder="Номер телефона с кодом" required="" class="modal-form__input">
+                      <input class="form__input" type="hidden" name="email" placeholder="E-mail" required value="without_email">
+                   </p>
+                   <p>
+                      <input type="text" name="textarea"  placeholder="Удобное время для звонка" required="" class="modal-form__input">
+                   </p>
+                   <p>
+                      <input type="submit" class="modal-form__input modal-form__button">
+                   </p>
+                   <span class="form__callback">Сообщение отправлено</span>
+                </form>
+             </main>
+             <footer class="modal__footer">
+             </footer>
+          </div>
+       </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-8" aria-hidden="true">
+       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-8-title">
+             <header class="modal__header">
+                <h2 class="modal__title" id="modal-8-title">
+                  Комплексный ремонт по акции в честь десятилетия фирмы 4 500 руб/м2 по полу (без учета потолков). Рассчитать комплексный ремонт вы можете при помощи таблицы.
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+             </header>
+             <main class="modal__content" id="modal-8-content">
+                  <iframe style="    border: 10px solid;
+            border-radius: 20px;    border-color: #2B6CA3; overflow: hidden;" width="100%" height="500" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=E6043ABF4A5E0189%214380&authkey=%21ANK9fvE5iNvaqFM&em=2&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='%D0%9B%D0%B8%D1%81%D1%821'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+             </main>
+             <footer class="modal__footer">
+             </footer>
+          </div>
+       </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+             <header class="modal__header">
+                <h2 class="modal__title" id="modal-1-title">
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+             </header>
+             <main class="modal__content" id="modal-1-content">
+                <div class="modal__about">
+                   <h3>Пластиковые окна для домов 137 серии</h3>
+                   <div>
+                      <img src="./img/picture/modals/home137.jpg">
+                      <img src="./img/picture/modals/home2137.jpg">
+                   </div>
+                </div>
+                <div class="modal__info">
+                   <div class="modal__text">
+                      <h4>Двустворчатое окно 1420x1150 мм</h4>
+                      <span>Цена окна: 6000 руб.</span><br>
+                      <span>Отделка + монтаж "под ключ": 6600 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 13600 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих  сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/137series.png">
+                   <div class="modal__text">
+                      <h4>Трёхстворчатое окно 1420x1700 мм</h4>
+                      <span>Цена окна: 8900 руб.</span><br>
+                      <span>Отделка + монтаж "под ключ": 8000 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 16900 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих окон, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/137series2.png">
+                   <div class="modal__text">
+                      <h4>
+                         Одностворчатое окно 1420x1150 мм
+                      </h4>
+                      <span>
+                      Цена окна: 7.000 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 6.600 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 13.600 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/137series3.png">
+                   <div class="modal__text">
+                      <h4>
+                         Балконный блок (тип 1)
+                         окно:1420x500 мм; дверь:2140x680 мм
+                      </h4>
+                      <span>
+                      Цена окна: 10.100 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 8.500 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 18.600 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/137series4.png">
+                   <div class="modal__text">
+                      <h4>
+                         Балконный блок (тип 2)
+                         окно: 1420х1200 мм; дверь: 2140х680 мм
+                      </h4>
+                      <span>
+                      Цена окна: 11.250 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 9.500 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 21.750 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/137series5.png">
+                </div>
+             </main>
+             <footer class="modal__footer">
+             </footer>
+          </div>
+       </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+             <header class="modal__header">
+                <h2 class="modal__title" id="modal-2-title">
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+             </header>
+             <main class="modal__content" id="modal-2-content">
+                <div class="modal__about">
+                   <h3>Пластиковые окна для домов 606 серии</h3>
+                   <div>
+                      <img src="./img/picture/modals/home606.jpg">
+                      <img src="./img/picture/modals/home2606.jpg">
+                   </div>
+                </div>
+                <div class="modal__info">
+                   <div class="modal__text">
+                      <h4>Балконный блок в большой комнате дверь: 2140х680 мм; окно: 1410х1700 мм
+                      </h4>
+                      <span>
+                      Цена окна: 12.450 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 15.500 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 27.450 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих  сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/606series.png">
+                   <div class="modal__text">
+                      <h4>
+                         Балконный блок в маленькой комнате
+                         или на кухне
+                         дверь: 2140х680 мм; окно: 1410x500
+                      </h4>
+                      <span>
+                      Цена окна: 9.800 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 8.300 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 17.100 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/606series2.png">
+                   <div class="modal__text">
+                      <h4>
+                         Двустворчатое окно 1410х1450 мм
+                      </h4>
+                      <span>
+                      Цена окна: 7.900 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 7.600 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 15.500 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/606series3.png">
+                </div>
+             </main>
+             <footer class="modal__footer">
+             </footer>
+          </div>
+       </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+             <header class="modal__header">
+                <h2 class="modal__title" id="modal-3-title">
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+             </header>
+             <main class="modal__content" id="modal-3-content">
+                <div class="modal__about">
+                   <h3>Пластиковые окна для домов 504д серии</h3>
+                   <div>
+                      <img src="./img/picture/modals/home504d.jpg">
+                      <img src="./img/picture/modals/home2504d.jpg">
+                   </div>
+                </div>
+                <div class="modal__info">
+                   <div class="modal__text">
+                      <h4>
+                         Двустворчатое окно 1540х1480 мм
+                      </h4>
+                      <span>
+                      Цена окна: 8.700 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 7.850 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 16.550 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих  сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/504dseries.png">
+                   <div class="modal__text">
+                      <h4>
+                         Трёхстворчатое окно 1530х2230 мм
+                      </h4>
+                      <span>
+                      Цена окна: 11.100 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 9.000 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 21.100 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/504dseries2.png">
+                   <div class="modal__text">
+                      <h4>
+                         Балконный блок
+                         окно: 1540х1510 мм; дверь: 2150х730 мм
+                      </h4>
+                      <span>
+                      Цена окна: 12.750 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 9.500 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 22.250 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/504dseries3.png">
+                </div>
+             </main>
+             <footer class="modal__footer">
+             </footer>
+          </div>
+       </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-4" aria-hidden="true">
+       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-4-title">
+             <header class="modal__header">
+                <h2 class="modal__title" id="modal-4-title">
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+             </header>
+             <main class="modal__content" id="modal-4-content">
+                <div class="modal__about">
+                   <h3>Пластиковые окна для домов 606.11 серии</h3>
+                   <div>
+                      <img src="./img/picture/modals/home606.11.jpg">
+                      <img src="./img/picture/modals/home2606.11.jpg">
+                   </div>
+                </div>
+                <div class="modal__info">
+                   <div class="modal__text">
+                      <h4>Окно Г-образное (кухня) 1430х850 мм, 550х870 мм</h4>
+                      <span>Цена окна: 10.000 руб.</span><br>
+                      <span>Отделка + монтаж "под ключ": 9.000 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 19.000 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/606.11series.png">
+                   <div class="modal__text">
+                      <h4>Трёхстворчатое окно 1450х2050 мм</h4>
+                      <span>Цена окна: 10.000 руб.</span><br>
+                      <span>Отделка + монтаж "под ключ": 9.700 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 19.700 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                            сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/606.11series2.png">
+                   <div class="modal__text">
+                      <h4>
+                         Двустворчатое окно 1410х1450 мм
+                      </h4>
+                      <span>
+                      Цена окна: 7.900 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 8.100 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 16.000 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                            сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/606.11series3.png">
+                   <div class="modal__text">
+                      <h4>
+                         Балконный блок
+                         окно: 1410х500 мм; дверь: 2140х680 мм
+                      </h4>
+                      <span>
+                      Цена окна: 9.800 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 9.000 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 18.800 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                            сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/606.11series4.png">
+                   <div class="modal__text">
+                      <h4>
+                         Балконный блок в большой комнате
+                         дверь: 2140х680 мм; окно: 1410х2050 мм
+                      </h4>
+                      <span>
+                      Цена окна: 22.250 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 16.900 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 39.150 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                            сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/606.11series5.png">
+                </div>
+             </main>
+             <footer class="modal__footer">
+             </footer>
+          </div>
+       </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-5" aria-hidden="true">
+       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-5-title">
+             <header class="modal__header">
+                <h2 class="modal__title" id="modal-5-title">
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+             </header>
+             <main class="modal__content" id="modal-5-content">
+                <div class="modal__about">
+                   <h3>Пластиковые окна для домов 1600ЛГ серии ("Корабль")</h3>
+                   <div>
+                      <img src="./img/picture/modals/home21600lg.jpg">
+                      <img src="./img/picture/modals/home1600lg.jpg">
+                   </div>
+                </div>
+                <div class="modal__info">
+                   <div class="modal__text">
+                      <h4>Трёхстворчатое окно 1140х2380 мм</h4>
+                      <span>Цена окна: 9.500 руб.</span><br>
+                      <span>Отделка + монтаж "под ключ": 9.200 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 18.700 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/1600lg.png">
+                   <div class="modal__text">
+                      <h4>Балконный блок
+                         окно: 1500х1450 мм, дверь: 2200х700 мм
+                      </h4>
+                      <span>Цена окна: 12.500 руб.</span><br>
+                      <span>Отделка + монтаж "под ключ": 10.850 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 23.350 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                            сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/1600lg2.png">
+                   <div class="modal__text">
+                      <h4>
+                         Трёхстворчатое окно 1420х2690 мм
+                      </h4>
+                      <span>
+                      Цена окна: 11.500 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 10.800 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 22.300 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                            сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/1600lg3.png">
+                </div>
+             </main>
+             <footer class="modal__footer">
+             </footer>
+          </div>
+       </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-6" aria-hidden="true">
+       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-6-title">
+             <header class="modal__header">
+                <h2 class="modal__title" id="modal-6-title">
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+             </header>
+             <main class="modal__content" id="modal-6-content">
+                <div class="modal__about">
+                   <h3>Пластиковые окна для домов 504 серии</h3>
+                   <div>
+                      <img src="./img/picture/modals/home2504.jpg">
+                      <img src="./img/picture/modals/home504.jpg">
+                   </div>
+                </div>
+                <div class="modal__info">
+                   <div class="modal__text">
+                      <h4>Двухстворчатое окно 1410х1450 мм</h4>
+                      <span>Цена окна: 7.900 руб.</span><br>
+                      <span>Отделка + монтаж "под ключ": 7.600 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 15.500 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/504series.png">
+                   <div class="modal__text">
+                      <h4>Трёхстворчатое окно 1410х1700 мм</h4>
+                      <span>Цена окна: 8.900 руб.</span><br>
+                      <span>Отделка + монтаж "под ключ": 8.000 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 16.900 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                            сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/504series2.png">
+                   <div class="modal__text">
+                      <h4>
+                         Балконная дверь 2150х730 мм
+                      </h4>
+                      <span>
+                      Цена окна: 8.000 руб.</span><br>
+                      <span>
+                      Отделка + монтаж "под ключ": 7.350 руб.</span>
+                      <div class="modal__price">
+                         <h3>ИТОГО: 15.350 руб. (окно + монтаж + отделка)</h3>
+                         <p><b>В стоимость включено:</b>
+                            окно, монтаж окна, отделка "под ключ" (включая все материалы: откосы из дорогих
+                            сэндвич-панелей, подоконник шириной 250 мм, водоотлив шириной 100 мм и их установку).
+                         </p>
+                      </div>
+                   </div>
+                   <img src="./img/picture/modals/504series3.png">
+                </div>
+             </main>
+             <footer class="modal__footer">
+             </footer>
+          </div>
+       </div>
+    </div>
     <script src="js/all.js"></script>
   </body>
+  <script>MicroModal.init();</script>
 </html>
